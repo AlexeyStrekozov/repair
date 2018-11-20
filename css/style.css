@@ -1,7 +1,37 @@
-.lorem {
-  font-family: 'Ranga', cursive;
-  margin: 0 auto;
+@font-face {
+  font-family: 'Museo Sans Light';
+  src: url("../fonts/MuseoSansCryl/MuseoSansCyrl-300.eot");
+  src: url("../fonts/MuseoSansCryl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCryl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCryl/MuseoSansCyrl-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Medium';
+  src: url("../fonts/MuseoSansCryl/MuseoSansCyrl-500.eot");
+  src: url("../fonts/MuseoSansCryl/MuseoSansCyr-500.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCryl/MuseoSansCyrl-500.woff") format("woff"), url("../fonts/MuseoSansCryl/MuseoSansCyrl-500.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Bold';
+  src: url("../fonts/MuseoSansCryl/MuseoSansCyrl-700.eot");
+  src: url("../fonts/MuseoSansCryl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCryl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCryl/MuseoSansCyrl-700.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Museo Sans Medium';
+}
+
+h1 {
+  font-family: 'Museo Sans Bold';
+}
+
+.container {
   width: 1200px;
-  font-size: 25px;
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
