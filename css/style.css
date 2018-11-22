@@ -16,11 +16,15 @@
   outline: none;
 }
 
+.button:active {
+  outline: none;
+}
+
 .input {
   font-size: 15px;
   padding: 25px;
   border-radius: 10px;
-  boreder: 1px solid #dddddd;
+  border: 1px solid #dddddd;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -548,6 +552,11 @@ template {
   margin-bottom: 31px;
 }
 
+.form__button:active {
+  outline: none;
+  border: none;
+}
+
 .form__text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -576,15 +585,6 @@ template {
   font-family: 'Museo Sans Bold', sans-serif;
   text-decoration: none;
   color: #333333;
-}
-
-.form__text__error {
-  color: red;
-  text-align: left;
-  font-size: 12px;
-  display: block;
-  margin-top: 3px;
-  display: none;
 }
 
 .form__text-img {
