@@ -16,6 +16,13 @@
   outline: none;
 }
 
+.input {
+  font-size: 15px;
+  padding: 25px;
+  border-radius: 10px;
+  boreder: 1px solid #dddddd;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -501,6 +508,100 @@ template {
 
 .main-advantages__img-3 {
   background-image: url("../img/main/paint.png");
+}
+
+.feedback {
+  padding: 94px;
+  background: url("../img/feedback/feedback-bg.jpg") no-repeat center right -40%;
+}
+
+.form {
+  max-width: 590px;
+}
+
+.form__title {
+  font-size: 24px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  line-height: 35px;
+  margin-bottom: 49px;
+}
+
+.form__subtitle {
+  display: block;
+  margin-bottom: 50px;
+}
+
+.form__input {
+  width: 276px;
+  margin-bottom: 30px;
+}
+
+.form__input:first-child {
+  margin-right: 30px;
+}
+
+.form__button {
+  padding: 28px;
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 31px;
+}
+
+.form__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form__text__manager {
+  max-width: 224px;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.form__text__yourself {
+  max-width: 224px;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.form__text__yourself a {
+  font-family: 'Museo Sans Bold', sans-serif;
+  text-decoration: none;
+  color: #333333;
+}
+
+.form__text__error {
+  color: red;
+  text-align: left;
+  font-size: 12px;
+  display: block;
+  margin-top: 3px;
+  display: none;
+}
+
+.form__text-img {
+  min-width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #cccccc;
+  margin-left: 91px;
+  background-size: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("../img/feedback/phone-receiver.png");
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {

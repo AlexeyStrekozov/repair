@@ -1,0 +1,57 @@
+.feedback
+ padding: 94px 
+ background: url('../img/feedback/feedback-bg.jpg') no-repeat center right -40%
+.form
+ max-width: 590px
+ &__title
+  font-size: 24px
+  +bold
+  line-height: 35px
+  margin-bottom: 49px
+ &__subtitle
+  display: block
+  margin-bottom: 50px
+ &__input
+  width: 276px;
+  margin-bottom: 30px
+  &:first-child
+   margin-right: 30px
+ &__button
+  padding: 28px
+  display: block
+  width: 100%
+  font-size: 16px
+  margin-bottom: 31px
+ &__text
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &__manager
+    max-width: 224px
+    font-size: 15px
+    line-height: 24px
+  &__yourself
+    max-width: 224px
+    font-size: 15px
+    line-height: 24px
+    a 
+      +bold
+      text-decoration: none
+      color: $text-color
+  &__error
+   color: red
+   text-align: left
+   font-size: 12px
+   display: block
+   margin-top: 3px
+   display: none
+  &-img
+   min-width: 40px
+   height: 40px
+   border-radius: 50%
+   border: 2px solid $form-icon
+   margin-left: 91px
+   background-size: 16px
+   background-repeat: no-repeat
+   background-position: center
+   background-image: url('../img/feedback/phone-receiver.png')
