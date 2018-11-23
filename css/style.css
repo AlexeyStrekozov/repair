@@ -520,7 +520,21 @@ template {
 
 .feedback {
   padding: 94px;
-  background: url("../img/feedback/feedback-bg.jpg") no-repeat center right -40%;
+  background: url("../img/feedback/feedback-bg.jpg") no-repeat center left 800px;
+  background-size: contain;
+  position: relative;
+  z-index: 1;
+}
+
+.feedback:before {
+  content: '';
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  z-index: -1;
 }
 
 .form {
@@ -620,5 +634,158 @@ img {
 .container {
   width: 1171px;
   margin: 0 auto;
+}
+
+@media (max-width: 1199px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    width: 767px;
+  }
+  .main-text__title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .feedback {
+    background: #ffffff;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hidden-s {
+    display: none;
+  }
+  .container {
+    width: 95%;
+  }
+  .feedback {
+    margin: auto;
+    text-align: center;
+  }
+  .feedback {
+    padding: 30px;
+  }
+  .main-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-text {
+    max-width: 400px;
+    margin: auto;
+  }
+  .main-text__title {
+    text-align: center;
+  }
+  .form {
+    margin: 0 auto;
+  }
+  .form__text {
+    text-align: center;
+    width: 100%;
+  }
+  .form__text-img {
+    margin: 0;
+  }
+  .form__input {
+    margin: 10px 0;
+    width: 100%;
+  }
+  .form__input:first-child {
+    margin: 0;
+  }
+  .form__input__manager {
+    width: 50%;
+  }
+  .form__input-img {
+    margin-left: 5px;
+  }
+  .form__button {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .tel-ph {
+    background-image: url("../img/feedback/phone-receiver.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    color: block;
+  }
+  .header-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container {
+    width: 95%;
+  }
+  .hidden-xs {
+    display: none;
+  }
+  .main-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .main-text {
+    margin: auto;
+  }
+  .main-text__title {
+    text-align: center;
+    font-size: 20px;
+  }
+  .main-text__title span {
+    font-size: 15px;
+  }
+  .main-advantages__item {
+    margin: 10px 0;
+  }
+  .feedback {
+    padding: 20px;
+  }
+  .form {
+    margin: 0 auto;
+  }
+  .form__title {
+    font-size: 18px;
+    margin: 10px 0;
+    font-size: 15px;
+  }
+  .form__subtitle {
+    margin: 10px 0;
+    font-size: 13px;
+  }
+  .form__text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .form__text__manager {
+    width: 100%;
+    font-size: 12px;
+  }
+  .form__button {
+    width: 100%;
+  }
+  .form__input {
+    width: 100%;
+    margin: 10px 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
