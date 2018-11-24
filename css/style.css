@@ -622,7 +622,12 @@ template {
           box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
+  overflow-x: hidden;
   font-family: 'Museo Sans Light';
   color: #333333;
 }
@@ -735,6 +740,9 @@ img {
   }
   .hidden-xs {
     display: none;
+  }
+  .main {
+    padding: 20px;
   }
   .main-wrap {
     -webkit-box-orient: vertical;
