@@ -1,6 +1,14 @@
 @media (max-width: 1199px)
  .container
   width: 970px
+ .modal
+  &__dialog
+   width: 970px 
+  &__form
+   &__input
+    width: 300px
+   &__button
+    width: 300px
 @media (max-width: 992px)
  .container
   width: 750px
@@ -11,13 +19,48 @@
     line-height: 36px
  .feedback
   background: #ffffff
-
+ .modal
+  &__dialog
+   width: 720px 
+  &-catalog
+   &__block
+    &__text
+     &__title
+      font-size: 12px
+     &__price
+      font-size: 10px
+    &__list
+     & ul
+      font-size: 13px
+      & li
+       & span
+        font-size: 13px
+        line-height: 15px
+    
+  &__form
+   &__input
+    width: 200px
+   &__button
+    width: 200px
+   &__title
+    font-size: 19px
+    width: 200px
+   &__subtitle
+     width: 200px
+     line-height: 20px
+   &__text
+     &__yourself
+       width: 200px
+   &__tel
+     width: 200px
+     font-size: 15px
+   
 @media (max-width: 768px)
+ .hiddne-s
+  display: none
  .header
   &-wrap
    flex-direction: column
- .hidden-s
-  display: none
  .container
   width: 95%
  .feedback
@@ -52,7 +95,30 @@
   &__button
    width: 100%
    margin: auto
-
+ .modal
+  &__dialog
+   width: 420px
+  &__form
+   padding: 5px
+   &__input
+    width: 200  px
+   &__button
+    width: 200px
+   &__title
+    line-height: 20px
+    font-size: 15px
+    width: 200px
+    margin-top: 50px
+   &__subtitle
+    width: 200px
+    line-height: 20px
+   &__text
+    &__yourself
+     width: 200px
+   &__tel
+    width: 300px
+    font-size: 15px
+  
 @media (max-width: 480px)
  .tel-ph
   background-image: url('../img/feedback/phone-receiver.png')
@@ -101,3 +167,27 @@
   &__input
    width: 100%
    margin: 10px 0
+ .modal
+  &__dialog
+   margin: auto
+   padding: 0
+   width: 276px
+  &__form
+   padding: 5px
+   width: 100%
+   &__input
+    width: 150px
+   &__button
+    width: 150px
+   &__title
+    font-size: 15px
+    width: 150px
+   &__subtitle
+    width: 150px
+    line-height: 15px
+   &__text
+    &__yourself
+     width: 150px
+   &__tel
+    width: 150px
+    font-size: 15px

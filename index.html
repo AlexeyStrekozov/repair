@@ -20,7 +20,7 @@
      <a class="header-text__phone" href="tel:+74954225131">+7&nbsp;(495)&nbsp;42-251-31</a>
     </div>
     <div class="header-text__button">
-     <button class="button tel-ph"><span class="hidden-xs">Перезвоните<span class="hidden-s"> мне</span></span></button>
+      <button class="button tel-ph" id="button-callback"><span class="hidden-xs">Перезвоните<span class="hidden-s"> мне</span></span></button>
     </div>
    </div>
   </div>
@@ -91,6 +91,91 @@
   </div>
  </div>
 </section>
+
+<div class="modal modal_hidden" id="modal-callback">
+  <div class="modal__dialog">
+    <div class="modal__close">&#10006;</div>
+    <div class="modal-catalog hiddne-s">
+    <div class="modal-catalog__block">
+      <div class="modal-catalog__block__img ">
+          <img class="hidden-xs" src="img/modal/bathroom.png" alt="Ванная">
+          <div class="modal-catalog__block__text">
+           <div class="modal-catalog__block__text__title bold">Ванная комната</div>
+           <div class="modal-catalog__block__text__price">
+            <div>135*150 - <span class="bold">31&nbsp;000&nbsp;руб.</span></div>
+            <div>170*170 - <span class="bold">43&nbsp;000&nbsp;руб.</span></div>
+           </div>
+          </div>
+        </div>
+
+          <div class="modal-catalog__block__img ">
+          <img class="hidden-xs" src="img/modal/restroom.png" alt="Туалет">
+          <div class="modal-catalog__block__text">
+            <div class="modal-catalog__block__text__title bold">Туалет</div>
+            <div class="modal-catalog__block__text__price">
+              <div>135*70 - <span class="bold">14&nbsp;000&nbsp;руб.</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-catalog__block__img ">
+        <img class="hidden-xs" src="img/modal/combined.png" alt="Совмещенный санузел">
+          <div class="modal-catalog__block__text">
+            <div class="modal-catalog__block__text__title bold">Совмещенный санузел</div>
+            <div class="modal-catalog__block__text__price">
+              <div>170*210 - <span class="bold">54&nbsp;000&nbsp;руб.</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-catalog__block__list">
+        <div class="modal-catalog__block__list__title bold"">В стоимость работ входит</div>
+          <ul>
+            <li><span>Демонтаж старого покрытия стен и пола</span></li>
+            <li><span>Выравнивание стен гипсовыми составами</span></li>
+            <li><span> Грунтовка стен и пола антисептиком, бетоноконтактом</span></li>
+            <li><span>Монтаж кафельной плитки на полу и стенах</span></li>
+            <li><span>Установка реечного или натяжного потолка, светильников</span></li>
+            <li><span>Монтаж двери с коробкой</span></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+      <div class="modal__form">
+        <h2 class="modal__form__title">
+          Узнайте точную стоимость
+          ремонта по телефону!
+        </h2>
+        <div class="modal__form__subtitle">Заполните поля ниже - мы свяжемся с Вами</div>
+        <form action="#">
+          <input type="text" class="input input-name modal__form__input" placeholder="Ваше Имя">
+          <input type="tel" class="input input-tel modal__form__input" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+            minlength="18" maxlength="18" placeholder="Ваш телефон">
+          <button type="submit" class="button modal__form__button">Узнать стоимость</button>
+        </form>
+        <div class="modal__form__text">
+          <div class="modal__form__text__yourself">
+          <div class="hidden-xs">Или Вы можете перезвонить нам сами
+            по телефону:
+          </div>
+            <a href="tel:+7(8182)42-51-31" class="tel-xs modal__form__tel">+7&nbsp;(8182)&nbsp;42-51-31</a>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('#button-callback').on('click', function () {
+      $('#modal-callback').toggleClass('modal_visible');
+    })
+    $('.modal__close').on('click', function () {
+      $('#modal-callback').toggleClass('modal_visible');
+    })
+  })
+</script>
 
 </body>
 </html>

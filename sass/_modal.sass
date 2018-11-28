@@ -1,0 +1,120 @@
+.modal
+ display: none
+ position: fixed
+ width: 100%
+ height: 100%
+ background-color: rgba(#000, 0.52)
+ left: 0
+ top: 0
+ z-index: 99
+ &_visible
+  display: flex
+ &__dialog
+  max-width: 1200px 
+  background-color: #fff
+  margin: auto
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+ &__close
+  position: absolute
+  top: 15px
+  right: 15px
+  &:hover
+   cursor: pointer
+ &-catalog
+  width: 55%
+  height: 100%
+  &__block
+   background-color: $modal-bk
+   padding: 75px
+   height: 660px
+   &__img
+    display: flex
+    margin-bottom: 15px
+    align-items: center
+   &__text
+    align-items: center
+    margin-left: 29px
+    &__title
+     +medium
+     font-size: 16px
+     font-weight: 400
+     margin-bottom: 13px
+     &:after
+      content: ""
+      display: block
+      margin-top: 12px
+      border-bottom: 2px solid $primary-color
+      width: 42px
+    &__price
+     +bold
+     font-size: 16px
+   &__list
+    &__title
+     margin-top: 53px
+     +bold 
+     font-size: 14px
+     font-weight: 400
+    & ul 
+     color: $primary-color  
+     & span
+       color: black
+       font-size: 14px
+       font-weight: 400
+       line-height: 25px
+ &__form
+  align-content: center
+  text-align: center
+  width: 45%
+  height: 660px
+  padding: 75px
+  &__title 
+   margin: auto 
+   width: 291px
+   height: 54px
+   color: #333333
+   +bold
+   font-size: 22px
+   font-weight: 400
+   line-height: 33px
+  &__subtitle
+   margin: 52px auto
+   width: 331px
+   height: 12px
+   color: $text-color
+   +light
+   font-size: 15px
+   font-weight: 400
+   line-height: 35px
+  &__input
+   width: 370px
+   height: 65px
+   margin-bottom: 15px
+  &__button
+   margin-top: 15px
+   width: 368px
+   height: 70px
+  &__text
+    &__yourself
+     margin: 33px auto
+     width: 271px
+     height: 35px
+     color: $text-color
+     +light
+     font-size: 15px
+     font-weight: 400
+     line-height: 20px
+  &__tel
+   margin-top: 13px
+   width: 211px
+   height: 21px
+   color: $text-color
+   +bold
+   font-size: 24px
+   font-weight: 400
+   line-height: 24px
+   text-decoration: none
+
+   
