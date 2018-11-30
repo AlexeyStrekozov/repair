@@ -6,6 +6,7 @@
  <meta http-equiv="X-UA-Compatible" content="ie=edge">
  <link href="https://fonts.googleapis.com/css?family=Ranga" rel="stylesheet">
  <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="css/slick.css">
  <title>Ремонт Квартир</title>
 </head>
 <body>
@@ -165,17 +166,30 @@
   </div>
 </div>
 
+<section class="portfolio">
+  <div class="container">
+   <h2 class="section-title section-title__center">
+    Работая с 2007 года, <br>
+    мы сделали более 500 ремонтов <span class="hidden-xs">в квартирах и домах</span>
+   </h2>
+   <div class="slider">
+     <div class="slider__item"><img src="img/portfolio/portfolio-img__1.png" alt=""></div>
+     <div class="slider__item"><img src="img/portfolio/portfolio-img__2.png" alt=""></div>
+     <div class="slider__item"><img src="img/portfolio/portfolio-img__3.png" alt=""></div>
+     <div class="slider__item"><img src="img/portfolio/portfolio-img__1.png" alt=""></div>
+     <div class="slider__item"><img src="img/portfolio/portfolio-img__2.png" alt=""></div>
+     <div class="slider__item"><img src="img/portfolio/portfolio-img__3.png" alt=""></div>
+   </div>  
+  </div>
+</section>
+
+
+
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script>
-  $(document).ready(function () {
-    $('#button-callback').on('click', function () {
-      $('#modal-callback').toggleClass('modal_visible');
-    })
-    $('.modal__close').on('click', function () {
-      $('#modal-callback').toggleClass('modal_visible');
-    })
-  })
-</script>
+<script src="js/slick.min.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>

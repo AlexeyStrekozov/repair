@@ -792,6 +792,76 @@ template {
   text-decoration: none;
 }
 
+.portfolio {
+  background-image: url("../img/portfolio/bk-portfolio.png");
+  padding: 100px 0;
+  z-index: 1;
+  background-size: contain;
+  position: relative;
+}
+
+.portfolio:before {
+  content: '';
+  right: 0;
+  top: 0;
+  width: 41%;
+  height: 100%;
+  background-color: #f5f5f5;
+  position: absolute;
+  z-index: -1;
+}
+
+.portfolio .slider {
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.portfolio .slider__item {
+  text-align: center;
+}
+
+.portfolio .slider__item img {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.arrow {
+  width: 45px;
+  height: 19px;
+  bottom: 0;
+  position: absolute;
+  bottom: -68px;
+}
+
+.arrow__right {
+  left: 50%;
+  -webkit-transform: 20px;
+          transform: 20px;
+  background: url("../img/arrow-right.png") no-repeat center;
+  background-size: 100%;
+  -webkit-transform: translateX(15px);
+          transform: translateX(15px);
+}
+
+.arrow__right:hover {
+  cursor: pointer;
+}
+
+.arrow__left {
+  left: 50%;
+  -webkit-transform: translateX(-45px);
+          transform: translateX(-45px);
+  margin-left: -15px;
+  -webkit-transform: 20px;
+          transform: 20px;
+  background: url("../img/arrow-left.png") no-repeat center;
+  background-size: 100%;
+}
+
+.arrow__left:hover {
+  cursor: pointer;
+}
+
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -820,6 +890,18 @@ img {
   font-weight: bold;
 }
 
+.section-title {
+  font-family: 'Museo Sans Bold', sans-serif;
+  line-height: 45px;
+  margin-bottom: 75px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-title__center {
+  text-align: center;
+}
+
 @media (max-width: 1199px) {
   .container {
     width: 970px;
@@ -833,9 +915,23 @@ img {
   .modal__form__button {
     width: 300px;
   }
+  .slider {
+    max-width: 970px;
+  }
+  .slider__item img {
+    width: 300px;
+  }
 }
 
 @media (max-width: 992px) {
+  .section-title {
+    line-height: 35px;
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  .slider {
+    max-width: 700px;
+  }
   .container {
     width: 750px;
   }
@@ -886,6 +982,17 @@ img {
 }
 
 @media (max-width: 768px) {
+  .section-title {
+    line-height: 35px;
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .slider {
+    max-width: 480px;
+  }
+  .portfolio {
+    padding: 50px 0 100px;
+  }
   .hiddne-s {
     display: none;
   }
@@ -949,34 +1056,47 @@ img {
     width: 420px;
   }
   .modal__form {
+    width: 400px;
+    height: 550px;
     padding: 5px;
   }
+  .modal__form div {
+    margin-top: 10px;
+  }
   .modal__form__input {
-    width: 200  px;
+    width: 250px;
+    margin-bottom: 10px;
   }
   .modal__form__button {
-    width: 200px;
+    width: 250px;
+    margin-top: 0;
   }
   .modal__form__title {
     line-height: 20px;
     font-size: 15px;
-    width: 200px;
+    width: 250px;
     margin-top: 50px;
   }
   .modal__form__subtitle {
-    width: 200px;
+    width: 250px;
     line-height: 20px;
+    margin-top: 10px;
   }
   .modal__form__text__yourself {
-    width: 200px;
+    width: 250px;
   }
   .modal__form__tel {
+    margin-top: 10px;
     width: 300px;
-    font-size: 15px;
+    font-size: 18px;
   }
 }
 
 @media (max-width: 480px) {
+  .section-title {
+    line-height: 35px;
+    font-size: 15px;
+  }
   .tel-ph {
     background-image: url("../img/feedback/phone-receiver.png");
     background-repeat: no-repeat;
@@ -1057,27 +1177,37 @@ img {
   .modal__form {
     padding: 5px;
     width: 100%;
+    height: 470px;
   }
   .modal__form__input {
-    width: 150px;
+    width: 200px;
   }
   .modal__form__button {
-    width: 150px;
+    width: 200px;
   }
   .modal__form__title {
     font-size: 15px;
-    width: 150px;
+    width: 200px;
   }
   .modal__form__subtitle {
-    width: 150px;
+    width: 200px;
     line-height: 15px;
   }
   .modal__form__text__yourself {
+    margin: 0 auto;
     width: 150px;
+    margin-top: 10px;
   }
   .modal__form__tel {
+    padding-top: 20px;
     width: 150px;
     font-size: 15px;
+  }
+  .portfolio {
+    padding: 50px 0 100px;
+  }
+  .slider {
+    max-width: 290px;
   }
 }
 /*# sourceMappingURL=style.css.map */
