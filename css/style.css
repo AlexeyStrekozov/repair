@@ -862,6 +862,14 @@ template {
   cursor: pointer;
 }
 
+.owl-nav {
+  text-align: center;
+}
+
+.owl-prev {
+  margin: 68px 15px;
+}
+
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -921,9 +929,17 @@ img {
   .slider__item img {
     width: 300px;
   }
+  .owl__item {
+    width: 320px;
+    margin: auto;
+  }
 }
 
 @media (max-width: 992px) {
+  .owl__item {
+    width: 320px;
+    margin: auto;
+  }
   .section-title {
     line-height: 35px;
     font-size: 25px;
@@ -982,6 +998,10 @@ img {
 }
 
 @media (max-width: 768px) {
+  .owl__item {
+    width: 320px;
+    margin: auto;
+  }
   .section-title {
     line-height: 35px;
     font-size: 15px;
