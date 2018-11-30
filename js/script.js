@@ -42,7 +42,7 @@ $('.owl-carousel').owlCarousel({
   loop: true,
   margin: 10,
   nav: true,
-  navText: ["<img src='img/arrow-left.png'>", "<img src='img/arrow-left.png'>"],
+  navText: ["<img src='arrow-left.png'>", "<img src='arrow-left.png'>"],
   responsive: {
     0: {
       items: 1
