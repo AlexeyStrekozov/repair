@@ -57,4 +57,22 @@ $('.owl-carousel').owlCarousel({
       items: 3
     }
   }
-}) 
+});
+
+  $('.js-ajax').on('submit', function () {
+    var fioVal = $('[name = fio]').val(),
+        phoneVal = $('[name = phone]').val();
+
+    $.ajax({
+      url: '/php/send.php',
+      data: {fio:fioVal, phone:phoneVal},
+      success: function (data) {
+        alert(data);
+      }
+    });
+    return false;
+});
+
+
+
+
