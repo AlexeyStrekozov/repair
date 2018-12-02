@@ -59,18 +59,23 @@ $('.owl-carousel').owlCarousel({
   }
 });
 
-  $('.js-ajax').on('submit', function () {
-    var fioVal = $('[name = fio]').val(),
-        phoneVal = $('[name = phone]').val();
+$(document).ready(function () {
+$('.js-ajax').on('submit', function () {
+  var fioVal = $('[name = fio]').val(),
+    phoneVal = $('[name = phone]').val();
 
-    $.ajax({
-      url: '/php/send.php',
-      data: {fio:fioVal, phone:phoneVal},
-      success: function (data) {
-        alert(data);
-      }
-    });
-    return false;
+  $.ajax({
+    url: 'php/send.php',
+    data: {fio:fioVal, phone:phoneVal},
+    success: function (data) {
+      if (data == 1)
+        alert("Сообщение отправлено");
+      else
+        alert("Проблемка");
+    }
+  });
+  return false;
+  });
 });
 
 

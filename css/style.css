@@ -870,6 +870,130 @@ template {
   margin: 68px 15px;
 }
 
+.questions {
+  padding: 75px 0;
+  background: url("../img/bk-questions.png") no-repeat center left 100%;
+  background-size: contain;
+  position: relative;
+  z-index: 1;
+}
+
+.questions:before {
+  content: '';
+  left: 0;
+  top: 0;
+  width: 55%;
+  height: 100%;
+  background-color: #ffc000;
+  position: absolute;
+  z-index: -1;
+}
+
+.questions-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: -9px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.questions-text__title {
+  width: 590px;
+  font-size: 22px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  line-height: 33px;
+  padding-top: 20px;
+}
+
+.questions-text__title div {
+  margin-top: 33px;
+  margin-bottom: 80px;
+  font-size: 16px;
+  line-height: 45px;
+  font-family: 'Museo Sans Light', sans-serif;
+}
+
+.questions-block__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 26px;
+}
+
+.questions-block__item__4 {
+  padding-top: 14px;
+}
+
+.questions-block__number {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid #000;
+  margin-right: 32px;
+  background-size: 16px;
+  text-align: center;
+  font-family: 'Museo Sans Bold', sans-serif;
+  padding: 6px;
+}
+
+.questions-block__text {
+  width: 400px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-size: 18px;
+}
+
+.questions-form {
+  margin-top: -11px;
+  width: 380px;
+}
+
+.questions-form__input {
+  width: 370px;
+  height: 65px;
+  margin-bottom: 10px;
+}
+
+.questions-form__button {
+  width: 370px;
+  margin: 20px auto;
+  padding: 25px 96px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-size: 16px;
+}
+
+.questions-form__title {
+  width: 377px;
+  font-size: 22px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  line-height: 33px;
+  text-align: center;
+  margin-bottom: 37px;
+}
+
+.questions-form__subtitle {
+  font-family: 'Museo Sans Light', sans-serif;
+  font-size: 16px;
+  line-height: 35px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.questions-form__text {
+  margin-top: 10px;
+  font-size: 15px;
+  font-family: 'Museo Sans Light', sans-serif;
+  line-height: 24px;
+  text-align: center;
+}
+
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

@@ -75,10 +75,9 @@
   <span class="form__subtitle">Оставьте заявку на 
    разработку бесплатного дизайн-проекта!
   </span>
-  <form action="#"  class="js-ajax">
-   <input type="text" name="fio" class="input input-name form__input" placeholder="Ваше Имя">
-   <input type="tel" name="phone" class="input input-tel form__input" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"  minlength="18" maxlength="18" placeholder="Телефон, +7 (123) 456-78-90">
-   
+  <form action="#" class="js-ajax">
+   <input type="text" name="fio" class="input input-name form__input" placeholder="Ваше Имя" required>
+   <input type="tel" name="phone" class="input input-tel form__input"  maxlength="18" placeholder="Телефон, +7 (123) 456-78-90" required>
    <button type="submit" class="button form__button">Получить<span class="hidden-xs">бесплатный дизайн&nbsp;-проект</span></button>
   </form>
   <div class="form__text">
@@ -149,10 +148,10 @@
           ремонта по телефону!
         </h2>
         <div class="modal__form__subtitle">Заполните поля ниже - мы свяжемся с Вами</div>
-        <form action="#">
-          <input type="text" class="input input-name modal__form__input" placeholder="Ваше Имя">
-          <input type="tel" class="input input-tel modal__form__input" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
-            minlength="18" maxlength="18" placeholder="Ваш телефон">
+        <form action="#" class="js-ajax">
+          <input type="text" name="fio" class="input input-name modal__form__input" placeholder="Ваше Имя" required>
+          <input type="tel" name="phone" class="input input-tel modal__form__input" 
+            minlength="11" maxlength="18" placeholder="Ваш телефон" required>
           <button type="submit" class="button modal__form__button">Узнать стоимость</button>
         </form>
         <div class="modal__form__text">
@@ -201,7 +200,51 @@
   </div>
 </section>
 
-
+<section class="questions">
+  <div class="container">
+    <div class="questions-wrap">
+      <div class="questions-text">
+        <div class="questions-text__title">
+          Мы можем озвучить Вам примерную стоимость
+          работы и материалов по телефону
+          <div>Для этого нужно ответить на 4 вопроса:</div>
+        </div>
+        <div class="questions-block">
+          <div class="questions-block__item">
+            <div class="questions-block__number">1.</div>
+            <div class="questions-block__text">Какова площадь помещения?</div>
+          </div>
+          <div class="questions-block__item">
+            <div class="questions-block__number">2.</div>
+            <div class="questions-block__text">У Вас новостройка или вторичное жилье?</div>
+          </div>
+          <div class="questions-block__item">
+            <div class="questions-block__number">3.</div>
+            <div class="questions-block__text">Где находиться помещение, в котором будет производитсья ремонт?</div>
+          </div>
+          <div class="questions-block__item questions-block__item__4">
+            <div class="questions-block__number">4.</div>
+            <div class="questions-block__text">Назначение помещения?</div>
+          </div>
+        </div>
+      </div>
+      <div class="questions-form">
+       <h2 class="questions-form__title">
+        Оставьте заявку на бесплатный
+        расчет ремонта по телефону
+       </h2>
+       <div class="questions-form__subtitle">Для этого заполните форму ниже</div>
+       <form action="#" class="js-ajax">
+        <input type="text" name="fio" class="input input-name questions-form__input" placeholder="Ваше Имя" required>
+        <input type="tel" name="phone" class="input input-tel questions-form__input" minlength="11" maxlength="18" placeholder="Ваш телефон" required>
+        <button type="submit" class="button questions-form__button">Рассчитать стоимость</button>
+       </form>
+        <div class="questions-form__text">
+         Мы перезвоним Вам в течение 60 секунд
+      </div>
+    </div>
+  </div>
+</section>
 
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
