@@ -11,6 +11,7 @@
 @import 'modal'
 @import 'portfolio'
 @import 'questions'
+@import 'error'
 
 *, *:after, *:before
  box-sizing: border-box
@@ -31,7 +32,9 @@ img
  
 .bold
   font-weight: bold
-
+.row
+  display: flex
+  flex-direction: row
 .section
  &-title
   +bold
@@ -41,5 +44,7 @@ img
   margin-right: auto
   &__center
    text-align: center
+	
 
 @import 'media'
+                                 

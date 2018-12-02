@@ -117,4 +117,32 @@
    line-height: 24px
    text-decoration: none
 
-   
+.success
+ display: none 
+ position: fixed
+ width: 100%
+ height: 100%
+ background-color: rgba(#000, 0.52)
+ left: 0
+ top: 0
+ z-index: 100
+ &_visible
+  display: flex
+ &__dialog
+  width: 500px 
+  height: 250px
+  background-color: #fff
+  margin: auto
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+  text-align: center
+  background-color: $primary-color
+  +bold
+ &__close
+  position: absolute
+  top: 15px
+  right: 15px
+  &:hover
+   cursor: pointer

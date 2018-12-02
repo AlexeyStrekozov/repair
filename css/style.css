@@ -546,11 +546,13 @@ template {
   font-family: 'Museo Sans Bold', sans-serif;
   line-height: 35px;
   margin-bottom: 49px;
+  text-align: center;
 }
 
 .form__subtitle {
   display: block;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .form__input {
@@ -792,6 +794,53 @@ template {
   text-decoration: none;
 }
 
+.success {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.52);
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.success_visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.success__dialog {
+  width: 500px;
+  height: 250px;
+  background-color: #fff;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  text-align: center;
+  background-color: #ffd200;
+  font-family: 'Museo Sans Bold', sans-serif;
+}
+
+.success__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.success__close:hover {
+  cursor: pointer;
+}
+
 .portfolio {
   background-image: url("../img/portfolio/bk-portfolio.png");
   padding: 100px 0;
@@ -994,6 +1043,14 @@ template {
   text-align: center;
 }
 
+.error {
+  color: red;
+  font-size: 12px;
+  display: block;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1020,6 +1077,16 @@ img {
 
 .bold {
   font-weight: bold;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .section-title {
@@ -1056,6 +1123,9 @@ img {
   .owl__item {
     width: 320px;
     margin: auto;
+  }
+  .questions-text {
+    margin-left: 10px;
   }
 }
 
@@ -1119,9 +1189,42 @@ img {
     width: 200px;
     font-size: 15px;
   }
+  .questions {
+    background: #ffc000;
+  }
+  .questions-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .questions-text {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .questions-text__title div {
+    margin-top: 23px;
+    margin-bottom: 50px;
+  }
+  .questions-block {
+    width: 450px;
+    margin: 0 auto;
+  }
+  .questions-block__number {
+    margin-right: 20px;
+  }
+  .questions-block__item {
+    text-align: left;
+  }
 }
 
 @media (max-width: 768px) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .owl__item {
     width: 320px;
     margin: auto;
@@ -1180,7 +1283,7 @@ img {
     margin: 0;
   }
   .form__input {
-    margin: 10px 0;
+    margin: 20px 0;
     width: 100%;
   }
   .form__input:first-child {
@@ -1195,6 +1298,10 @@ img {
   .form__button {
     width: 100%;
     margin: auto;
+  }
+  .form-error {
+    width: 100%;
+    margin: 10px 0;
   }
   .modal__dialog {
     width: 420px;
@@ -1234,9 +1341,22 @@ img {
     width: 300px;
     font-size: 18px;
   }
+  .questions-text__title {
+    width: 450px;
+    margin: 0 auto;
+  }
+  .success__dialog {
+    width: 300px;
+  }
 }
 
 @media (max-width: 480px) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   .section-title {
     line-height: 35px;
     font-size: 15px;
@@ -1321,10 +1441,10 @@ img {
   .modal__form {
     padding: 5px;
     width: 100%;
-    height: 470px;
+    height: 500px;
   }
   .modal__form__input {
-    width: 200px;
+    width: 250px;
   }
   .modal__form__button {
     width: 200px;
@@ -1352,6 +1472,45 @@ img {
   }
   .slider {
     max-width: 290px;
+  }
+  .questions-text__title {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .questions-text__title div {
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+  .questions-block {
+    width: 300px;
+    margin: 0 auto;
+  }
+  .questions-block__number {
+    margin-right: 20px;
+  }
+  .questions-block__item {
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .questions-form {
+    width: 300px;
+  }
+  .questions-form__title {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  .questions-form__subtitle {
+    margin-bottom: 20px;
+  }
+  .questions-form-xs {
+    width: 300px;
+  }
+  .questions-form-xs input {
+    width: 100%;
+  }
+  .questions-form-xs button {
+    width: 100%;
+    margin-bottom: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

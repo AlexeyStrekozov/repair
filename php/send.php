@@ -34,8 +34,8 @@ $mail->Body    = '
 	Телефон: ' . $phone . '';
 $mail->AltBody = 'Это альтернативный текст';
 
-if(!$mail->send()) {
+if(!$mail->send()){
     return false;
-} else {
+} else  {
     return true;
 }

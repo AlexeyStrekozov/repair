@@ -5,16 +5,8 @@ $(document).ready(function () {
     $('.modal__close').on('click', function () {
       $('#modal-callback').toggleClass('modal_visible');
     })
-    $('.success__close').click(function () {
-      $('.success').removeClass('success_visible');
-    });
-    $('.success__close').click(function () {
-      $('.success').removeClass('modal_visible');
-    });
   })
 
-  
-  
 $(document).ready(function () {
   $('.slider').slick({
     slidesToShow: 3,
