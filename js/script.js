@@ -64,7 +64,7 @@ $(document).ready(function ()
     event.preventDefault();
     $.ajax({
       type: "POST",
-      url: "../php/send.php",
+      url: "php/send.php",
       data: $(this).serialize()
     }).done(function () {
       $(this).find("input").val("");
@@ -73,7 +73,6 @@ $(document).ready(function ()
     });
     return false;
   });
-
 });
 
 
