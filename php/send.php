@@ -1,6 +1,6 @@
 <?php 
 
-$name = $_POST['fio'];
+$fio = $_POST['fio'];
 $phone = $_POST['phone'];
 
 require_once('phpmailer/PHPMailerAutoload.php');
@@ -30,7 +30,7 @@ $mail->isHTML(true);                                  // Set email format to HTM
 $mail->Subject = 'Это тема сообщения';
 $mail->Body    = '
 	Пользователь оставил свои данные <br> 
-	Имя: ' . $name . ' <br>
+	Имя: ' . $fio . ' <br>
 	Телефон: ' . $phone . '';
 $mail->AltBody = 'Это альтернативный текст';
 
