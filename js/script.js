@@ -59,7 +59,7 @@ $('.owl-carousel').owlCarousel({
   }
 });
 
-$(document).ready(function () 
+$(document).ready(function () {
   $('.js-ajax').submit(function (event) {
     event.preventDefault();
     $.ajax({
