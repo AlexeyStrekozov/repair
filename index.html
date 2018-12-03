@@ -8,7 +8,9 @@
  <link rel="stylesheet" href="css/style.css">
  <link rel="stylesheet" href="css/slick.css">
  <link rel="stylesheet" href="css/owl.carousel.min.css">
-<link href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+ <link href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" rel="stylesheet" type="text/css" />
+ <link rel="stylesheet" href="css/animate.css">
+  
 <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script type="text/javascript" src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
  <title>Ремонт Квартир</title>
@@ -70,27 +72,27 @@
 
 <section class="feedback">
  <div class="container">
-  <div class="form">
-  <h2 class="form__title">
+  <div class="form  wow slideInLeft">
+  <h2 class="form__title wow slideInLeft" data-wow-delay="0.1s">
    Мы бесплатно разработаем дизайн-проект
    Вашего жилья и реализуем его!
   </h2>
-  <span class="form__subtitle">Оставьте заявку на 
+  <span class="form__subtitle wow slideInLeft" data-wow-delay="0.2s">Оставьте заявку на 
    разработку бесплатного дизайн-проекта!
   </span>
   <form action="#" class="js-ajax" id="form">
   <div class="row">
-<div class="form-error"><input type="text" name="fio" class="input input-name form__input" placeholder="Ваше Имя"
+<div class="form-error wow slideInLeft" data-wow-delay="0.3s"><input type="text" name="fio" class="input input-name form__input" placeholder="Ваше Имя"
 value="" ></div>
-   <div class="form-error"><input type="tel" name="phone" class="input input-tel form__input phone" maxlength="11"
+   <div class="form-error wow slideInLeft" data-wow-delay="0.4s"><input type="tel" name="phone" class="input input-tel form__input phone" maxlength="11"
 placeholder="Телефон" value=""></div>
   </div>
-<button type="submit" class="button form__button" id="button-boxes">Получить<span class="hidden-xs">бесплатный
+<button type="submit" class="button form__button wow slideInLeft" data-wow-delay="0.5s" id="button-boxes">Получить<span class="hidden-xs">бесплатный
     дизайн&nbsp;-проект</span></button>
    <div class="error"></div>
   </form>
-  <div class="form__text">
-    <div class="form__text__manager">Наш менеджер перезвонит <span class="hidden-s">Вам в течение 60 секунд</span></div>
+  <div class="form__text wow slideInLeft" data-wow-delay="0.6 s">
+    <div class="form__text__manager ">Наш менеджер перезвонит <span class="hidden-s">Вам в течение 60 секунд</span></div>
     <div class="form__text-img hidden-xs"></div>
     <div class="form__text__yourself">
      <div class="hidden-xs">или перезвоните нам сами</div>
@@ -209,51 +211,164 @@ placeholder="Телефон" value=""></div>
   </div>
 </section>
 
+<section class="price">
+  <div class="container">
+    <h2 class="section-title section-title__center">У нас очень гибкая система&nbsp;скидок <br> на комплексные работы!</h2>
+    <h3 class="section-subtitle">Прайс на наши услуги</h3>
+    <div class="price-row">
+      <div class="price-wrap">
+        <div class="card wow fadeInUp" data-wow-delay="0.2s">
+          <div class="card__img-wrap">
+            <img src="img/price/price-1.jpg" alt="" class="card__img">
+          </div>
+          <h4 class="card__title">Ремонт ванных комнат и с/у</h4>
+          <a href="#" class="card__link">Узнать цены</a>
+        </div>
+        <div class="card wow fadeInUp" data-wow-delay="0.4s">
+          <div class="card__img-wrap">
+            <img src="img/price/price-2.jpg" alt="" class="card__img">
+          </div>
+          <h4 class="card__title">Ремонт комнат и квартир</h4>
+          <a href="#" class="card__link">Узнать цены</a>
+        </div>
+        <div class="card wow fadeInUp" data-wow-delay="0.6s">
+          <div class="card__img-wrap">
+            <img src="img/price/price-3.jpg" alt="" class="card__img">
+          </div>
+          <h4 class="card__title">Отделка офисных помещений</h4>
+          <a href="#" class="card__link">Узнать цены</a>
+        </div>
+        <div class="card wow fadeInUp" data-wow-delay="0.2s">
+          <div class="card__img-wrap">
+            <img src="img/price/price-4.jpg" alt="" class="card__img">
+          </div>
+          <h4 class="card__title">Ремонт в новостройках</h4>
+          <a href="#" class="card__link">Узнать цены</a>
+        </div>
+        <div class="card wow fadeInUp" data-wow-delay="0.4s">
+          <div class="card__img-wrap">
+            <img src="img/price/price-5.jpg" alt="" class="card__img">
+          </div>
+          <h4 class="card__title">Ремонт кухонь</h4>
+          <a href="#" class="card__link">Узнать цены</a>
+        </div>
+        <div class="card wow fadeInUp" data-wow-delay="0.6s">
+          <div class="card__img-wrap">
+            <img src="img/price/price-6.jpg" alt="" class="card__img">
+          </div>
+          <h4 class="card__title">Ремонт дач и коттеджей</h4>
+          <a href="#" class="card__link">Узнать цены</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="conveniently">
+ <div class="container">
+  <h2 class="section-title section-title__center">Наши специалисты готовы выехать на замер  в любое удобное для Вас время</h2>
+  <h3 class="section-subtitle">5 шагов до ремонта</h3>
+  <div class="conveniently-row">
+    <div class="conveniently-wrap">
+      <div class="conveniently-block">
+        <div class="conveniently-block__img conveniently-block__img-1"></div>
+        <div class="conveniently-block__text">
+          Вы звоните нам <br>или оставляете заявку
+        </div>
+      </div>
+      <div class="conveniently-img hiddne-s"></div>
+      <div class="conveniently-block">
+        <div class="conveniently-block__img conveniently-block__img-2"></div>
+        <div class="conveniently-block__text">
+          Согласуем удобное
+          <br>для Вас время выезда 
+          специалиста на замер
+        </div>
+      </div>
+      <div class="conveniently-img  hiddne-s"></div>
+      <div class="conveniently-block">
+        <div class="conveniently-block__img conveniently-block__img-3"></div>
+        <div class="conveniently-block__text">
+          Рассчитываем смету
+          согласовываем <br>
+          с Вами
+        </div>
+      </div>
+      <div class="conveniently-img hiddne-s"></div>
+      <div class="conveniently-block">
+        <div class="conveniently-block__img conveniently-block__img-4"></div>
+        <div class="conveniently-block__text">
+          Подписываем договор
+          закупаем материал <br>
+          по оптовым ценам
+
+        </div>
+      </div>
+      <div class="conveniently-img hiddne-s"></div>
+      <div class="conveniently-block">
+        <div class="conveniently-block__img conveniently-block__img-5"></div>
+        <div class="conveniently-block__text">
+          Выполняем ремонт
+          в указанные сроки
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+</section>
+
+<section class="qualitative" >
+  <div class="container">
+    <div>Ремонт обойдется Вам дешевле, так&nbsp;как <br> мы используем качественные материалы по оптовым ценам</div>
+  </div>
+</section>
+
 <section class="questions">
   <div class="container">
     <div class="questions-wrap">
       <div class="questions-text">
-        <div class="questions-text__title">
+        <div class="questions-text__title wow fadeInDown" data-wow-delay="0.2s">
           Мы можем озвучить Вам примерную стоимость
           работы и материалов по телефону
           <div>Для этого нужно ответить на 4 вопроса:</div>
         </div>
         <div class="questions-block">
-          <div class="questions-block__item">
+          <div class="questions-block__item wow fadeInUp" data-wow-delay="0.2s">
             <div class="questions-block__number">1.</div>
             <div class="questions-block__text">Какова площадь помещения?</div>
           </div>
-          <div class="questions-block__item">
+          <div class="questions-block__item wow fadeInUp" data-wow-delay="0.4s">
             <div class="questions-block__number">2.</div>
             <div class="questions-block__text">У Вас новостройка или вторичное жилье?</div>
           </div>
-          <div class="questions-block__item">
+          <div class="questions-block__item wow fadeInUp" data-wow-delay="0.6s">
             <div class="questions-block__number">3.</div>
             <div class="questions-block__text">Где находиться помещение, в котором будет производитсья ремонт?</div>
           </div>
-          <div class="questions-block__item questions-block__item__4">
+          <div class="questions-block__item questions-block__item__4 wow fadeInUp" data-wow-delay="0.8s">
             <div class="questions-block__number">4.</div>
             <div class="questions-block__text">Назначение помещения?</div>
           </div>
         </div>
       </div>
       <div class="questions-form">
-       <h2 class="questions-form__title">
+       <h2 class="questions-form__title wow slideInRight " data-wow-delay="0.1s">
         Оставьте заявку на бесплатный
         расчет ремонта по телефону
        </h2>
-       <div class="questions-form__subtitle">Для этого заполните форму ниже</div>
-       <form action="#" class="js-ajax questions-form-xs" id="questions-form">
-        <input type="text" name="fio" class="input input-name questions-form__input" placeholder="Ваше Имя" >
-        <input type="tel" name="phone" class="input input-tel questions-form__input phone" minlength="11" maxlength="11" placeholder="Ваш телефон" >
-        <button type="submit" class="button questions-form__button" id="questions-button">Рассчитать <span class="hidden-xs">стоимость</span></button>
+       <div class="questions-form__subtitle  wow slideInRight " data-wow-delay="0.2s">Для этого заполните форму ниже</div>
+       <form action="#" class="js-ajax questions-form-xs  wow slideInRight " id="questions-form" data-wow-delay="0.3s">
+        <input type="text" name="fio" class="input input-name questions-form__input  wow slideInRight " placeholder="Ваше Имя"  data-wow-delay="0.4s">
+        <input type="tel" name="phone" class="input input-tel questions-form__input phone  wow slideInRight " minlength="11" maxlength="11" placeholder="Ваш телефон" data-wow-delay="0.5s" >
+        <button type="submit" class="button questions-form__button  wow slideInRight" id="questions-button" data-wow-delay="0.6s">Рассчитать <span class="hidden-xs">стоимость</span></button>
        </form>
-        <div class="questions-form__text">
+        <div class="questions-form__text  wow slideInRight" data-wow-delay="0.8s">
          Мы перезвоним Вам в течение 60 секунд
       </div>
     </div>
   </div>
 </section>
+
 
 <div class="success">
   <div class="success__dialog">  
@@ -267,10 +382,29 @@ placeholder="Телефон" value=""></div>
 <script src="js/send.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 <script src="js/slick.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script>
+  new WOW().init();
+</script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/jquery.validate.min.js"></script>
 <script src="js/script.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
+<script>
+  $(document).ready(function () { 
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 4000) {
+        effectFirst();
+      }
+    });
+  });
+
+
+  function effectFirst() {
+$(".qualitative").css("background", "#ffc000");
+  }
+
+</script>
 
 </body>
 </html>

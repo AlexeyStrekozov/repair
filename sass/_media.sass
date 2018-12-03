@@ -19,9 +19,20 @@
   margin: auto
  .questions
    &-text
-    margin-left: 10px  
+    margin-left: 10px
+  
 
 @media (max-width: 992px)
+ .qualitative
+  padding: 30px
+  div
+   font-size: 30px
+   line-height: 25px
+ .conveniently
+  &-wrap
+   width: 500px 
+  &-block
+   margin-bottom: 30px
  .owl__item
    width: 320px
    margin: auto
@@ -79,6 +90,9 @@
    &__tel
      width: 200px
      font-size: 15px
+ .card
+   max-width: 320px
+ 
  .questions
   background: $medium-bg-color
   &-wrap
@@ -99,6 +113,27 @@
     text-align: left
 
 @media (max-width: 768px)
+ .qualitative
+  padding: 30px
+  div
+   font-size: 30px
+   line-height: 25px
+ .conveniently   
+  padding: 50px 0
+  h2
+   margin-bottom: 25px
+  h3 
+   margin-bottom: 25px
+  &-block
+   margin: 30px auto
+ .price
+   padding: 50px 0
+   h2
+    margin-bottom: 25px
+    font-size: 30px
+    +bold
+   &-wrap
+    margin-top: 25px
  .row
   flex-direction: column
  .owl__item
@@ -199,6 +234,23 @@
   
 
 @media (max-width: 480px)
+ .qualitative
+  padding: 20px
+  div
+   font-size: 20px
+   line-height: 25px
+ .conveniently   
+  padding: 50px 0
+  h2
+   font-size: 20px
+  h3 
+   font-size: 16px
+ .price
+   padding: 50px 0
+   h2
+    margin-bottom: 45px
+    font-size: 20px
+    +bold
  .row
   flex-direction: column
  .section
@@ -314,3 +366,4 @@
     button
      width: 100%
      margin-bottom: 10px
+ 
