@@ -73,34 +73,37 @@
 
 <section class="feedback">
  <div class="container">
-  <div class="form  wow slideInLeft">
-  <h2 class="form__title wow slideInLeft" data-wow-delay="0.1s">
-   Мы бесплатно разработаем дизайн-проект
-   Вашего жилья и реализуем его!
-  </h2>
-  <span class="form__subtitle wow slideInLeft" data-wow-delay="0.2s">Оставьте заявку на 
-   разработку бесплатного дизайн-проекта!
-  </span>
-  <form action="#" class="js-ajax" id="form">
-  <div class="row">
-<div class="form-error wow slideInLeft" data-wow-delay="0.3s"><input type="text" name="fio" class="input input-name form__input" placeholder="Ваше Имя"
-value="" ></div>
-   <div class="form-error wow slideInLeft" data-wow-delay="0.4s"><input type="tel" name="phone" class="input input-tel form__input phone" maxlength="11"
-placeholder="Телефон" value=""></div>
+  <div class="form-wrap">
+    <div class="form  wow slideInLeft">
+      <h2 class="form__title wow slideInLeft" data-wow-delay="0.1s">
+      Мы бесплатно разработаем дизайн-проект
+      Вашего жилья и реализуем его!
+      </h2>
+      <span class="form__subtitle wow slideInLeft" data-wow-delay="0.2s">Оставьте заявку на 
+      разработку бесплатного дизайн-проекта!
+      </span>
+      <form action="#" class="js-ajax" id="form">
+      <div class="row">
+    <div class="form-error wow slideInLeft" data-wow-delay="0.3s"><input type="text" name="fio" class="input input-name form__input" placeholder="Ваше Имя"
+    value="" ></div>
+      <div class="form-error wow slideInLeft" data-wow-delay="0.4s"><input type="tel" name="phone" class="input input-tel form__input phone" maxlength="11"
+    placeholder="Телефон" value=""></div>
+      </div>
+    <button type="submit" class="button form__button wow slideInLeft" data-wow-delay="0.5s" id="button-boxes">Получить<span class="hidden-xs">бесплатный
+        дизайн&nbsp;-проект</span></button>
+      <div class="error"></div>
+      </form>
+      <div class="form__text wow slideInLeft" data-wow-delay="0.6 s">
+        <div class="form__text__manager ">Наш менеджер перезвонит <span class="hidden-s">Вам в течение 60 секунд</span></div>
+        <div class="form__text-img hidden-xs"></div>
+        <div class="form__text__yourself">
+        <div class="hidden-xs">или перезвоните нам сами</div>
+        <a href="tel:+74954225131" class="tel-xs">+7&nbsp;(495)&nbsp;42-251-31</a>
+        </div>
+      </div>
+      </div>
   </div>
-<button type="submit" class="button form__button wow slideInLeft" data-wow-delay="0.5s" id="button-boxes">Получить<span class="hidden-xs">бесплатный
-    дизайн&nbsp;-проект</span></button>
-   <div class="error"></div>
-  </form>
-  <div class="form__text wow slideInLeft" data-wow-delay="0.6 s">
-    <div class="form__text__manager ">Наш менеджер перезвонит <span class="hidden-s">Вам в течение 60 секунд</span></div>
-    <div class="form__text-img hidden-xs"></div>
-    <div class="form__text__yourself">
-     <div class="hidden-xs">или перезвоните нам сами</div>
-     <a href="tel:+74954225131" class="tel-xs">+7&nbsp;(495)&nbsp;42-251-31</a>
-    </div>
-  </div>
-  </div>
+  
   </div>
  </div>
 </section>
@@ -383,7 +386,7 @@ placeholder="Телефон" value=""></div>
     </h3>
     <div class="contacts-address">
       <div class="contacts-address__item">
-        <img src="img/footer/map.png" class="contacts-address__img" alt="Карта">
+        <div class="contacts-address-img"><img src="img/footer/map.png" class="contacts-address__img" alt="Карта"></div>
         <div class="contacts-address__text">
         г. Караганда <br>
         <span class="bold">ул. Гапеева, д.12,
@@ -392,7 +395,7 @@ placeholder="Телефон" value=""></div>
       </div>
 
       <div class="contacts-address__item">
-        <img src="img/footer/clock.png" class="contacts-address__img" alt="Часы">
+        <div class="contacts-address-img"><img src="img/footer/clock.png" class="contacts-address__img" alt="Часы"></div>
         <div class="contacts-address__text">
           Режим работы:<br>
           <spna class="bold">с 9:00 до 18:00</span>
@@ -400,7 +403,7 @@ placeholder="Телефон" value=""></div>
       </div>
 
       <div class="contacts-address__item">
-        <img src="img/footer/phone.png" class="contacts-address__img" alt="Телефон">
+        <div class="contacts-address-img"><img src="img/footer/phone.png" class="contacts-address__img" alt="Телефон"></div>
         <div class="contacts-address__text">
           Телефон:<br>
           + 7 (495) 42-251-31
@@ -449,9 +452,16 @@ $(".qualitative").css("background", "#ffc000");
 <script>
 document.querySelector('#button-callback').addEventListener('click', function () {
   yaCounter51427762.reachGoal('btn'); return true;
-document.querySelector('.form__button').addEventListener('submit', function () {
+});
+document.querySelector('#form').addEventListener('submit', function () {
   yaCounter51427762.reachGoal('form'); return true;
-})
+});
+document.querySelector('#questions-form').addEventListener('submit', function () {
+  yaCounter51427762.reachGoal('form'); return true;
+});
+document.querySelector('#modal-form').addEventListener('submit', function () {
+  yaCounter51427762.reachGoal('form'); return true;
+});
 </script>
 
 

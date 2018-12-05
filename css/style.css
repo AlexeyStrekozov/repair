@@ -520,7 +520,7 @@ template {
 
 .feedback {
   padding: 94px;
-  background: url("../img/feedback/feedback-bg.jpg") no-repeat center left 800px;
+  background: url("../img/feedback/feedback-bg.jpg") no-repeat center left 1200px;
   background-size: contain;
   position: relative;
   z-index: 1;
@@ -530,7 +530,7 @@ template {
   content: '';
   left: 0;
   top: 0;
-  width: 50%;
+  width: 55%;
   height: 100%;
   background-color: #fff;
   position: absolute;
@@ -539,6 +539,12 @@ template {
 
 .form {
   max-width: 590px;
+}
+
+.form-wrap {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .form__title {
@@ -556,7 +562,7 @@ template {
 }
 
 .form__input {
-  width: 276px;
+  width: 275px;
   margin-bottom: 30px;
 }
 
@@ -1293,11 +1299,9 @@ template {
   margin: 0 auto;
 }
 
-.contacts-address__img {
-  max-width: 20px;
-  max-height: 20px;
-  margin-right: 25px;
-  margin-top: 6px;
+.contacts-address-img {
+  width: 20px;
+  margin: 6px 25px 0 0;
 }
 
 .contacts-address__item {
@@ -1309,6 +1313,11 @@ template {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+.contacts-address__img {
+  max-width: 20px;
+  max-height: 20px;
 }
 
 .contacts-address__text {
@@ -1383,16 +1392,16 @@ img {
 
 @media (max-width: 1199px) {
   .container {
-    width: 970px;
+    max-width: 970px;
   }
   .modal__dialog {
     width: 970px;
   }
   .modal__form__input {
-    width: 300px;
+    max-width: 300px;
   }
   .modal__form__button {
-    width: 300px;
+    max-width: 300px;
   }
   .slider {
     max-width: 970px;
