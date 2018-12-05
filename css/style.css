@@ -1,4 +1,3 @@
-@charset "UTF-8";
 .button {
   padding: 17px 30px;
   font-size: 13px;
@@ -521,7 +520,7 @@ template {
 
 .feedback {
   padding: 94px;
-  background: url("../img/feedback/feedback-bg.jpg") no-repeat center left 1000пpx;
+  background: url("../img/feedback/feedback-bg.jpg") no-repeat center left 100%;
   background-size: contain;
   position: relative;
   z-index: 1;
@@ -531,7 +530,7 @@ template {
   content: '';
   left: 0;
   top: 0;
-  width: 52%;
+  width: 55%;
   height: 100%;
   background-color: #fff;
   position: absolute;
@@ -540,6 +539,7 @@ template {
 
 .form {
   max-width: 590px;
+  padding: 0 20px;
 }
 
 .form-wrap {
@@ -563,7 +563,7 @@ template {
 }
 
 .form__input {
-  width: 275px;
+  width: 260px;
   margin-bottom: 30px;
 }
 
