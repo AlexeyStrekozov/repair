@@ -107,6 +107,7 @@ $(document).ready(function () {
      type: "POST",
      url: "php/send.php",
      data: $("#questions-form").serialize()
+     
     }).done(function () {
      $(".success").addClass("success_visible");
      $("form").trigger("reset");
