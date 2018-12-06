@@ -1331,7 +1331,7 @@ template {
   padding-top: 10px;
 }
 
-.warranty h1 {
+.warranty h2 {
   width: 700px;
   font-size: 30px;
   line-height: 45px;
@@ -1589,7 +1589,7 @@ img {
   .help-block {
     margin: 13px auto;
   }
-  .warranty h1 {
+  .warranty h2 {
     width: 100%;
     font-size: 20px;
   }
