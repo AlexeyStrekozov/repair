@@ -1265,6 +1265,138 @@ template {
   text-align: center;
 }
 
+.help {
+  padding: 100px 0;
+}
+
+.help-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.help-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+.help-block {
+  width: 370px;
+  height: 410px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #f7f7f7;
+  margin-right: 30px;
+}
+
+.help-block__text {
+  max-width: 340px;
+  padding: 23px;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.help-block__img {
+  max-width: 500px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.help-block__img-1 {
+  background-image: url("../img/help/help-img-1.png");
+}
+
+.help-block__img-2 {
+  background-image: url("../img/help/help-img-2.png");
+}
+
+.help-block__img-3 {
+  background-image: url("../img/help/help-img-3.png");
+}
+
+.warranty {
+  padding-bottom: 230px;
+  padding-top: 10px;
+}
+
+.warranty h1 {
+  width: 700px;
+  font-size: 30px;
+  line-height: 45px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  text-align: center;
+}
+
+.warranty-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+.warranty-wrap {
+  margin: 0 auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.warranty-block {
+  width: 300px;
+  text-align: center;
+  margin-right: 100px;
+  padding-top: 20px;
+}
+
+.warranty-block:last-child {
+  margin-right: 0;
+}
+
+.warranty-block__img {
+  width: 270px;
+  height: 360px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  border: 20px solid #f5f5f5;
+}
+
+.warranty-block__img-1 {
+  background-image: url("../img/warranty/warranty-img-1.jpg");
+  margin: 45px auto;
+}
+
+.warranty-block__img-2 {
+  background-image: url("../img/warranty/warranty-img-2.jpg");
+  margin: 45px auto;
+}
+
+.warranty-block__img-3 {
+  background-image: url("../img/warranty/warranty-img-3.jpg");
+  margin: 45px auto;
+}
+
+.warranty-block__text {
+  width: 300px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1417,9 +1549,72 @@ img {
   .questions-text {
     margin-left: 10px;
   }
+  .help {
+    max-width: 970px;
+    margin: 0 auto;
+  }
+  .help-block {
+    width: 300px;
+    margin-right: 20px;
+  }
+  .warranty {
+    max-width: 970px;
+    margin: 0 auto;
+  }
+  .warranty-wrap {
+    max-width: 970px;
+  }
+  .warranty-block {
+    max-width: 250px;
+  }
+  .warranty-block__text {
+    max-width: 250px;
+  }
+  .warranty-block__img {
+    max-width: 250px;
+  }
+  .qualitative div {
+    max-width: 960px;
+    font-size: 26px;
+  }
 }
 
 @media (max-width: 992px) {
+  .help-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .help-block {
+    margin: 13px auto;
+  }
+  .warranty h1 {
+    width: 100%;
+    font-size: 20px;
+  }
+  .warranty-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .warranty-block {
+    margin: 5px auto;
+  }
+  .warranty-block__text {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .warranty-block__img-1 {
+    margin: 10px 0;
+  }
+  .warranty-block__img-2 {
+    margin: 10px 0;
+  }
+  .warranty-block__img-3 {
+    margin: 10px 0;
+  }
   .footer {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1724,6 +1919,16 @@ img {
 }
 
 @media (max-width: 480px) {
+  .help {
+    padding: 20px 0;
+  }
+  .warranty {
+    padding: 20px 0;
+  }
+  .warranty h1 {
+    width: 100%;
+    font-size: 18px;
+  }
   .qualitative {
     padding: 20px;
   }

@@ -20,9 +20,53 @@
  .questions
    &-text
     margin-left: 10px
+ .help
+   max-width: 970px
+   margin: 0 auto
+   &-block
+    width: 300px
+    margin-right: 20px
+ .warranty
+   max-width: 970px
+   margin: 0 auto
+   &-wrap
+    max-width: 970px
+   &-block
+    max-width: 250px
+    &__text
+     max-width: 250px
+    &__img
+     max-width: 250px
+ .qualitative
+   div
+    max-width: 960px
+    font-size: 26px
   
 
 @media (max-width: 992px)
+ .help
+  &-wrap
+   flex-direction: column
+  &-block
+   margin: 13px auto
+ .warranty
+  h1
+   width: 100%
+   font-size: 20px
+  &-wrap
+   flex-direction: column
+  &-block
+   margin: 5px auto
+   &__text
+    width: 100%
+    margin: 0 auto
+   &__img
+    &-1
+     margin: 10px 0
+    &-2
+     margin: 10px 0
+    &-3
+     margin: 10px 0
  .footer
   flex-direction: column
  .map
@@ -259,6 +303,13 @@
   
 
 @media (max-width: 480px)
+ .help
+  padding: 20px 0
+ .warranty
+  padding: 20px 0
+  h1
+   width: 100%
+   font-size: 18px
  .qualitative
   padding: 20px
   div
